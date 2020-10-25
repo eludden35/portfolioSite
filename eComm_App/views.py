@@ -5,7 +5,7 @@ from .models import *
 # *********************************************************
 # This method will render WELCOME page; welcome page displays register/login links.
 def index(request):
-    return render(request, 'welcome.html')
+    return render(request, 'index.html')
 
 # *********************************************************
 # This method will render REGISTER page.

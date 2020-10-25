@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap Practice">
+    <meta name="author" content="Elonzo Ludden">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Bootstrap Practice</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootPrac.css' %}">
+    <link rel="stylesheet" href="{% static 'fixed.css' %}">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!-- Start Home -->
+<div id="home">
+    
+<!-- Nav Start -->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><h3>Elonzo Ludden</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Nav End -->
+
+<!-- Start Landing Page Section -->
+<div class="landing">
+    <div class="home-wrap">
+        <div class="home-inner">
+        </div>
+    </div>
+</div>
+
+<div class="caption text-center">
+    <h1>Welcome to My Portfolio</h1>
+    <h3>Full Stack Software Engineer</h3>
+    <a class="btn btn-outline-light btn-lg" href="#aboutme">Get Started</a>
+</div>
+<!-- End Landing Page Section -->
+</div>
+<!-- End of home -->
+<!-- Start About Me -->
+<div id="aboutme" class="offset">
+
+    <!-- Start Jumbotron -->
+    <div class="jumbotron" >
+
+        <div class="col-12 text-center" >
+            <h3 class="heading" >About Me</h3>
+            <div class="heading-underline"></div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6 aboutme" >
+                <div class="row" >
+                    <div class="col-md-4">
+                        <img src="{% static 'img/lonzo.jpg' %}">
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i>
+                            I am a passionate, aspiring Full-stack Developer that is soon to graduate from the Coding Dojo bootcamp with experience in Python, MERN, and Java. I have previous experience in leaderships roles and equal opportunity advisory. I am a hard-working, quick-learning, and organized individual. I am one that thrives in stressful and team environments. I am independently motivated and focused on writing effective and well-written code. I am excited for a career in software development that will engage, challenge, and progress my abilities.
+                            <br>
+                            <br>
+                            <i class="fas fa-lock"></i>  <strong>Secret Security Clearance</strong>
+
+                            <hr class="aboutme-hr">
+                            <cite>&#8212; Elonzo, Full Stack Software Developer</cite>
+                        </blockquote>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </div> <!---End Row--->
+
+    </div> <!---End Jumbotron--->
+
+</div>
+<!-- End of About Me -->
+
+<!-- Start Resources -->
+<div id="skills" class="offset">
+    
+
+    <div class="fixed-background"> <!---Start Fixed Background--->
+
+        <div class="row dark text-center"> <!---Start Dark Row---->
+
+            <div class="col-12 text-center">
+                <h2 class="heading">Skills</h2>
+                <div class="heading-underline"></div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Computer Languages</h3>
+                <div class="feature" >
+                    <i class="fas fa-code fa-3x" ></i>
+                </div>
+                <p class="lead" >HTML 5, CSS 3, JavaScript, Python, React</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Frameworks</h3>
+                <div class="feature" >
+                    <i class="fas fa-th-large fa-3x" ></i>
+                </div>
+                <p class="lead" >Django, ASP.NET, Node.js, Express, MongoDB, Bootstrap, Entity</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Databases</h3>
+                <div class="feature" >
+                    <i class="fas fa-database fa-3x" ></i>
+                </div>
+                <p class="lead" >MySQL, MongoDB, Django ORM</p>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Version Control</h3>
+                <div class="feature" >
+                    <i class="fas fa-code-branch fa-3x" ></i>
+                </div>
+                <p class="lead" >Git</p>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Methodologies</h3>
+                <div class="feature" >
+                    <i class="fas fa-sitemap fa-3x" ></i>
+                </div>
+                <p class="lead">MVC, OPP, AJAX, API's, TTD</p>
+            </div>
+            <!-- <p><strong>Version Control:</strong> Git</p>
+            <p><strong>Methodologies:</strong> MVC, OPP, AJAX, API's, TTD</p> -->
+
+        </div> <!---End Dark Row-->
+
+            <div class="fixed-wrap">
+                <div class="fixed">
+                </div>
+            </div>
+        </div>
+
+    </div> <!---End Fixed Background--->
+
+</div>
+<!-- End of Resources -->
+
+<!-- Start Skills -->
+<div id="skills" class="offset">
+    
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="narrow">
+    
+            <div class="col-12 text-center" >
+                <h3 class="heading">My Projects</h3>
+                <div class="heading-underline"></div>
+            </div>
+    
+            <div class="row text-center">
+    
+                <div class="col-md-6">
+                    <div class="feature">
+                        <h3 class="heading1">Trip Buddy</h3>
+                        <p>Trip planning website</p>
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <i class="fab fa-css3 fa-3x"></i>
+                        <i class="fab fa-python fa-3x"></i>
+                        <img src="https://img.icons8.com/color/96/000000/django.png"/><br>
+                        <a class="btn btn-light btn-md" href="http://3.129.42.159/">Go To Project</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="feature">
+                        <h3 class="heading1">eCommerce</h3>
+                        <p>Full stack eCommerce website</p>
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <i class="fab fa-css3 fa-3x"></i>
+                        <i class="fab fa-python fa-3x"></i>
+                        <img src="https://img.icons8.com/color/96/000000/django.png"/><br>
+                        <a class="btn btn-light btn-md" href="#" target="_blank">Coming Soon...</a>
+                    </div>
+                </div>
+    
+        </div> <!--End Row -->
+    
+        </div>  <!--End Narrow---->
+    </div> <!---End Jumbotron -->
+<!-- End of Skills -->
+
+<!-- Start Projects -->
+<!-- <div id="projects" class="offset">
+    
+<div class="col-12 narrow text-center" >
+    <h1>My Projects</h1>
+    <a class="btn btn-light btn-md" href="#">Trip Buddy</a><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quis ipsam officiis sunt neque officia nobis eaque soluta rerum inventore.</p>
+    <a class="btn btn-light btn-md" href="#" target="_blank">eCommerce</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quis ipsam officiis sunt neque officia nobis eaque soluta rerum inventore.</p>
+</div>
+
+</div> -->
+<!-- End of Projects -->
+
+<!-- Start Contact -->
+<div id="contact" class="offset">
+
+    <footer>
+        <div class="row justify-content-center">
+
+            <div class="col-md-5 text-center">
+                <h3>Contact Info</h3>
+                <div class="heading-underline"></div>
+                <p>(626) 590-0773<br>elonzo.ludden@gmail.com</p>
+                <a href="https://www.github.com/eludden35" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/elonzo-ludden/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+</div>
+<!-- End of Contact -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+</body>
+</html>
